@@ -61,6 +61,18 @@
 
 .start-journey-thumbnail{
     margin-left: 131px;
+    position: relative;
+}
+
+.svg{
+    position: relative;
+    left: 1.8em;
+}
+
+.image{
+    position: absolute;
+    top: 30px;
+    left: 50px;
 }
 
 /* companies logo styles  */
@@ -137,10 +149,11 @@
     font-size: 14px;
 }
 
-.see{
+.see, .see .fa-arrow-right{
     text-align: end;
     color: rgba(224, 44, 109, 0.87);
 }
+
 
 /* featured product styles  */
 
@@ -186,3 +199,21 @@
     line-height: 24px;
     font-weight: 700;
 }
+
+/* reponsive style for mobile  */
+
+@media only screen and (max-width: 688px){
+   .start-journey{
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 80%;
+    padding: 20%;
+   }
+   .start-journey-thumbnail{
+    margin: 0;
+   }
+}
+
+
+
+
